@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<h2> Edit {{ genre.name }}: </h2>
+	<div class="edit_area">
+			<form action="{{ url_for('editGenre', genre_id = genre.id)}}" method = "post">
+					<label for="name">Name:</label>
+					<input type ="text" class="form-control" name="name" value="{{genre.name }}">
+					<button type="submit" class="button" id="submit" type="submit">Save</button>
+					<a href = '{{url_for('showGenre')}}' class="button">
+						Cancel
+					</a>
+			</form>
+	</div>
+{% include "footer.html" %}
+{% endblock %}

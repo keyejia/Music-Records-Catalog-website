@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<h2> Are you sure you want to delete {{genre.name}}? </h2>
+
+<form action="#" method = 'post'>
+	<div class="edit_area">
+		<button type="submit" class="button" id="submit" type="submit">Delete</button>
+		<a href = '{{url_for('showGenre')}}' class="button">
+			Cancel
+		</a>
+	</div>
+</form>
+{% include "footer.html" %}
+{% endblock %}

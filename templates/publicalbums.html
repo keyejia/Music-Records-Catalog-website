@@ -1,0 +1,33 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class = "title_block">
+	<h1 class = "page_title"><span>&#9733 {{ genre.name }} &#9733</span></h1>
+</div>
+
+<div class = 'flash'>
+	{% with messages = get_flashed_messages() %}
+      	{% if messages %}
+          
+        <ul>
+        	{% for message in messages %}
+            	<li> <strong> {{ message }} </strong> </li>
+        	{% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+</div>	
+	{% if albums !=[] %}	
+		{% for i in albums %}
+			<div class="albums">
+				<h2>{{i.name}}</h2>
+				<p>Added by: {{i.user.name}}</p>
+				<p>{{i.artist}}</p>
+				<p>{{i.year}}</p>
+				<img class = "album_cover" src='{{i.image_address}}'>
+				<p class="Description">Description: {{i.description}}</p>
+			</div>
+		{% endfor %}
+	{% endif %}
+{% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,17 @@
+
+<ul class="top_banner">
+	<li class="nav">
+		<a href="{{url_for('showGenre')}}">
+			<span class="home" ></span>Show All Genre
+		</a>
+	</li>
+	<li style = "float:right" class="nav">
+		{%if 'username' not in session %}
+		<a href="{{url_for('showLogin')}}">Click Here to Login </a>
+		{% else %}
+		<a href="{{url_for('gdisconnect')}}">Logout </a>
+		{% endif %}
+	</li>
+</ul>
+
+<img src="{{ url_for('static', filename='vinyl-record.jpg') }}" title="banner" class="banner_pic">

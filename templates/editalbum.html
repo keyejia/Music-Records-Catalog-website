@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<h1>Edit Album</h1>
+
+<div class="edit_area">
+	<form action="#" method = "post">
+		<label for="name">Name:</label>
+		<input type ="text" maxlength="100" class="form-control" name="name" value="{{item.name}}">
+		</br>
+
+		<label for="artist">Artist:</label>
+		<input type ="text" maxlength="100" class="form-control" name="artist" value="{{item.artist}}">
+		</br>
+
+		<label for="year">Year:</label>
+		<input type ="text" maxlength="100" class="form-control" name="year" value="{{item.year}}">
+		</br>
+
+		<label for="description">Description:</label>
+		<textarea class="form-control" maxlength="250" rows="3" name="description">{{item.description}}
+		</textarea>
+		</br>
+	    </br>
+
+		<label for="image_address">image_address:</label>
+		<input type ="text" maxlength="100" class="form-control" name="image_address" value="{{item.image_address}}">
+		</br>
+
+		<button type="submit" class="btn btn-default" id="submit" type="submit">
+		Save
+		</button>
+		<a href = "{{url_for('showGenre')}}" class="button">
+			Cancel
+		</a>
+	</form>
+</div>
+{% include "footer.html" %}
+{% endblock %}

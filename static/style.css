@@ -1,0 +1,197 @@
+body{
+	padding:5%;
+	padding-top:5px;
+	margin-bottom:30px;
+	background-color:#C9AE87;
+	font-weight: 500;
+	font-family:Stencil Std, fantasy;
+	color:#AC4236;
+}
+/* For Large Screens */
+.page_title {
+   font-size:3.8em;
+   border-bottom: 7px solid #AC4236; 
+} 
+.genres{
+	font-size:1.5em;
+}
+.albums{
+	margin-left: 25%;
+	margin-right:25%;
+	margin-top:5px;
+	padding:2%;
+}
+.title_block{
+   padding-top:25px;
+}
+.flash{
+	padding-top: 10px;
+	font-size:1.4em;
+}
+
+/* For Mobile */
+@media all and (max-width: 770px) {
+    .page_title {
+   		font-size:2em;
+   		border-bottom: 3px solid #AC4236; 
+	} 
+	.title_block{
+   		padding-top:5px;
+	}
+	.genres{
+		font-size:0.8em;
+	}
+	.albums{
+		margin-left: 0%;
+		margin-right:0%;
+		margin-top:1px;
+		padding:0%;
+	}
+	.flash{
+	padding-top: 5px;
+	font-size:0.8em;
+}
+}
+
+.top_banner {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#AC4236;
+}
+
+.bottom_banner{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#AC4236;
+}
+
+.banner_pic{
+	width:100%;
+}
+
+.nav {
+    float: left;
+}
+
+.nav a {
+    display: block;
+    color: #C9AE87;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #1a0000;
+}
+
+.bottom_banner{
+	margin-top:5px;
+}
+
+.genres{
+	display:block;
+	margin-left:20%;
+	margin-right:20%;
+	color:#AC4236;
+	text-align: center;
+	text-decoration: none;
+	padding-bottom:0px;
+}
+
+.genres:hover{
+	background-color:#AC4236;
+	color:#C9AE87;
+}
+
+.edit_delete{
+	display:block;
+	text-align:center;
+	margin:0;
+}
+
+.edit_delete_albums{
+	float:right;
+}
+
+.delete{
+	color:#AC4236;
+	text-decoration: none;
+	border-left: 1.5px solid #AC4236;
+	padding: 0px 5px;
+	margin:0;
+}
+
+.edit{
+	color:#AC4236;
+	text-decoration: none;
+	border-right: 1.5px solid #AC4236;
+	padding: 0px 5px;
+	margin:0;
+}
+
+.edit:hover{
+	background-color:#AC4236;
+	color:#C9AE87;
+}
+.delete:hover{
+	background-color:#AC4236;
+	color:#C9AE87;
+}
+
+.page_title {
+   width: 100%; 
+   text-align: center; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+.page_title span { 
+    background:#C9AE87; 
+    padding:0 10px; 
+}
+
+.albums{
+	display:block;
+	text-align: center;
+	border:1px solid #AC4236;
+}
+
+.albums:hover{
+	box-shadow: 8px 3px 3px rgba(0,0,0,0.15);
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.album_cover{
+	width:100%;
+	max-width:300px;
+}
+
+.Description{
+	text-align: left;
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:5px
+	margin-bottom:5px;
+}
+
+.edit_area{
+	display:block;
+	text-align: left;
+	margin-top:10px;
+	margin-bottom:45px;
+	padding:10px;
+	border:1px solid #AC4236;
+}
+
+.button{
+	margin:5px;
+}
+
+label, input{
+	display:block;
+}
