@@ -1,6 +1,9 @@
 # Records Catalog Website
-project for Udacity fullstack nanodegree
-# Installing the Vagrant VM for ud330 - Authentication & Authorization
+
+## Description
+an application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.
+
+## Installing the Vagrant VM for ud330 - Authentication & Authorization
 
 **Note: If you already have a vagrant machine installed from previous Udacity courses skip to the 'Fetch the Source Code and VM Configuration' section**
 
